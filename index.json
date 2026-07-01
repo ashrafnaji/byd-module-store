@@ -1,48 +1,28 @@
 {
   "schemaVersion": 3,
-  "note": "Catalog folders are named after the exact outswver string. The app fetches only the folders matching the detected unit firmware.",
   "vehicles": [
-    { "id":"di3-sw13.1.22","name":"BYD Di3 SW 13.1.22","description":"Atto 3 / Yuan Plus — firmware 13.1.22.x","carModels":["BYD Atto 3","BYD Yuan Plus","BYD Yuan Plus Pro"],"vehicleTypePatterns":["Di3.0"],"outswverPatterns":["13.1.22"],"chipset":"trinket","sdkMin":29,"sdkMax":29 },
-    { "id":"di3-sw13","name":"BYD Di3 SW 13.x","description":"Atto 3 / Yuan Plus — any SW 13","carModels":["BYD Atto 3","BYD Yuan Plus","BYD Atto 3 Pro"],"vehicleTypePatterns":["Di3.0"],"outswverPatterns":["13."],"chipset":"trinket","sdkMin":29,"sdkMax":30 },
-    { "id":"di4-sw15","name":"BYD Di4 SW 15.x","description":"Seal / Atto 4 / Dolphin Plus","carModels":["BYD Seal","BYD Atto 4","BYD Dolphin Plus"],"vehicleTypePatterns":["Di4.0"],"outswverPatterns":["15."],"chipset":"","sdkMin":30,"sdkMax":31 },
-    { "id":"di5-sw16","name":"BYD Di5 SW 16.x","description":"Atto 5 / Sealion 7","carModels":["BYD Atto 5","BYD Sealion 7"],"vehicleTypePatterns":["Di5.0"],"outswverPatterns":["16."],"chipset":"","sdkMin":31,"sdkMax":33 }
+    {
+      "id": "di3-sw13.1.22.2601230.1",
+      "name": "BYD Di3 · 13.1.22.2601230.1",
+      "description": "Atto 3 / Yuan Plus — firmware 13.1.22.2601230.1. Qualcomm SM6125, Android 10.",
+      "carModels": ["BYD Atto 3", "BYD Yuan Plus", "BYD Yuan Plus Pro", "BYD Atto 3 Pro"],
+      "vehicleTypePatterns": ["Di3.0"],
+      "outswverPatterns": ["13.1.22.2601230.1"],
+      "chipset": "trinket",
+      "sdkMin": 29,
+      "sdkMax": 29
+    }
   ],
   "catalogs": [
     {
       "id": "universal",
       "outswverPatterns": ["*"],
-      "path": "catalog/universal/modules.json",
-      "description": "Works on all BYD units"
+      "path": "catalog/universal/modules.json"
     },
     {
       "id": "13.1.22.2601230.1",
       "outswverPatterns": ["13.1.22.2601230.1"],
-      "path": "catalog/13.1.22.2601230.1/modules.json",
-      "description": "Exact firmware 13.1.22.2601230.1 only (most specific)"
-    },
-    {
-      "id": "13.1.22",
-      "outswverPatterns": ["13.1.22"],
-      "path": "catalog/13.1.22/modules.json",
-      "description": "Any build of patch 13.1.22"
-    },
-    {
-      "id": "13.1",
-      "outswverPatterns": ["13.1."],
-      "path": "catalog/13.1/modules.json",
-      "description": "Any SW 13.1.x version"
-    },
-    {
-      "id": "13",
-      "outswverPatterns": ["13."],
-      "path": "catalog/13/modules.json",
-      "description": "Any SW 13.x version (Di3 broad)"
-    },
-    {
-      "id": "15",
-      "outswverPatterns": ["15."],
-      "path": "catalog/15/modules.json",
-      "description": "SW 15.x (Di4 — Seal, Atto 4)"
+      "path": "catalog/13.1.22.2601230.1/modules.json"
     }
   ]
 }
