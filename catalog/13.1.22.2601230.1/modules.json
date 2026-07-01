@@ -38,7 +38,7 @@
       "requires": []
     },
     {
-      "id": "byd-lang-arabic",
+      "id": "byd-lang-fix",
       "name": "Arabic UI Language Pack",
       "description": "Patches 13 system APKs with Arabic RTL: AutoVideo, BluetoothPhone, BydBootGuide, CarSetting, Launcher3 and more.",
       "version": "1.0.0",
@@ -56,7 +56,7 @@
       "requires": []
     },
     {
-      "id": "byd-voice-engine",
+      "id": "byd-voice-countrycode",
       "name": "iFlytek Global Voice Engine",
       "description": "Replaces Cerence with iFlytek. AR/EN/RU/HI + 7 more languages. Patches SpeechHMI whitelist (autoType 0xff). Needs ~1.5GB voice data on /data/navi.",
       "version": "1.0.0",
