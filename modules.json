@@ -1,187 +1,23 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "lastUpdated": "2026-07-01",
   "maintainer": "ashrafnaji",
+  "vehicles": [
+    { "id":"di3-sw13","name":"BYD Di3 \u00b7 SW 13.x","description":"Di3.0 platform, firmware 13.x \u2014 Atto 3 / Yuan Plus (2022-2026). Qualcomm SM6125 (trinket), Android 10.","carModels":["BYD Atto 3","BYD Yuan Plus","BYD Yuan Plus Pro","BYD Atto 3 Pro"],"vehicleTypePatterns":["Di3.0"],"outswverMajor":13,"chipset":"trinket","sdkMin":29,"sdkMax":29 },
+    { "id":"di3-sw14","name":"BYD Di3 \u00b7 SW 14.x","description":"Di3.0 platform, firmware 14.x \u2014 updated Atto 3 / Yuan Plus (2024+).","carModels":["BYD Atto 3 (2024)","BYD Yuan Plus (2024)"],"vehicleTypePatterns":["Di3.0"],"outswverMajor":14,"chipset":"trinket","sdkMin":29,"sdkMax":30 },
+    { "id":"di4-sw15","name":"BYD Di4 \u00b7 SW 15.x","description":"Di4.0 platform, firmware 15.x \u2014 Seal / Atto 4 / Dolphin Plus.","carModels":["BYD Seal","BYD Atto 4","BYD Dolphin Plus","BYD Sealion 6"],"vehicleTypePatterns":["Di4.0"],"outswverMajor":15,"chipset":"","sdkMin":30,"sdkMax":31 },
+    { "id":"di5-sw16","name":"BYD Di5 \u00b7 SW 16.x","description":"Di5.0 platform, firmware 16.x \u2014 Atto 5 / Sealion 7.","carModels":["BYD Atto 5","BYD Sealion 7","BYD Seal U"],"vehicleTypePatterns":["Di5.0"],"outswverMajor":16,"chipset":"","sdkMin":31,"sdkMax":33 },
+    { "id":"di2-sw11","name":"BYD Di2 \u00b7 SW 11.x","description":"Di2.0 platform, firmware 11.x \u2014 older BYD models.","carModels":["BYD Yuan EV","BYD e2","BYD e3","BYD Song Pro EV"],"vehicleTypePatterns":["Di2.0","Di2"],"outswverMajor":11,"chipset":"","sdkMin":26,"sdkMax":28 }
+  ],
   "modules": [
-    {
-      "id": "byd-test-module",
-      "name": "BYD Test Module",
-      "description": "Safe test module — no system changes. Use to verify BYD Module Store is working.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "ashrafnaji",
-      "minMagisk": 20400,
-      "compatibleUnits": [
-        "*"
-      ],
-      "compatibleSdkMin": 26,
-      "compatibleSdkMax": 34,
-      "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-test-module-v1.0.0.zip",
-      "sha256": "",
-      "sizeMb": 0.0,
-      "changelog": "Initial test release",
-      "requires": []
-    },
-    {
-      "id": "byd-androidauto",
-      "name": "Android Auto",
-      "description": "Enables Android Auto support on BYD Di3/Di4 head units. Installs patched AndroidAuto APK with certificate bypass.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "BYD Community",
-      "minMagisk": 20400,
-      "compatibleUnits": [
-        "Di3.0_3.5UI",
-        "Di3.0",
-        "Di4.0"
-      ],
-      "compatibleSdkMin": 29,
-      "compatibleSdkMax": 30,
-      "downloadUrl": "https://github.com/YOUR_GITHUB_USERNAME/byd-module-store/releases/download/v1.0.0/byd-androidauto.zip",
-      "sha256": "",
-      "sizeMb": 15.2,
-      "changelog": "Initial release — patched AndroidAuto with SSL bypass",
-      "requires": []
-    },
-    {
-      "id": "byd-carplay",
-      "name": "CarPlay + MFi Hook",
-      "description": "Enables Apple CarPlay by emulating the MFi coprocessor (CP02AH) via LD_PRELOAD hook. Requires a donor DI3 unit on the same Wi-Fi for MFi signing relay.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "BYD Community",
-      "minMagisk": 20400,
-      "compatibleUnits": [
-        "Di3.0_3.5UI",
-        "Di3.0"
-      ],
-      "compatibleSdkMin": 29,
-      "compatibleSdkMax": 30,
-      "downloadUrl": "https://github.com/YOUR_GITHUB_USERNAME/byd-module-store/releases/download/v1.0.0/byd-carplay.zip",
-      "sha256": "",
-      "sizeMb": 2.8,
-      "changelog": "Initial release — MFi I2C hook + relay client",
-      "requires": []
-    },
-    {
-      "id": "byd-lang-arabic",
-      "name": "Arabic UI Language Pack",
-      "description": "Patches 13 system APKs with Arabic translations (RTL support). Includes AutoVideo, BluetoothPhone, BydBootGuide, CarSetting, Launcher3 and more.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "BYD Community",
-      "minMagisk": 20400,
-      "compatibleUnits": [
-        "Di3.0_3.5UI",
-        "Di3.0",
-        "Di4.0",
-        "*"
-      ],
-      "compatibleSdkMin": 29,
-      "compatibleSdkMax": 30,
-      "downloadUrl": "https://github.com/YOUR_GITHUB_USERNAME/byd-module-store/releases/download/v1.0.0/byd-lang-arabic.zip",
-      "sha256": "",
-      "sizeMb": 28.5,
-      "changelog": "Initial release — Arabic translations for 13 system APKs",
-      "requires": []
-    },
-    {
-      "id": "byd-voice-engine",
-      "name": "iFlytek Global Voice Engine",
-      "description": "Replaces the China-only Cerence voice stack with the iFlytek global engine. Supports Arabic, English, Russian, Hindi and 7 more languages. Requires ~1.5 GB of voice data on /data/navi.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "BYD Community",
-      "minMagisk": 20400,
-      "compatibleUnits": [
-        "Di3.0_3.5UI",
-        "Di3.0"
-      ],
-      "compatibleSdkMin": 29,
-      "compatibleSdkMax": 29,
-      "downloadUrl": "https://github.com/YOUR_GITHUB_USERNAME/byd-module-store/releases/download/v1.0.0/byd-voice-engine.zip",
-      "sha256": "",
-      "sizeMb": 138.0,
-      "changelog": "Initial release — patched SpeechHMI with autoType whitelist bypass + country code fix",
-      "requires": []
-    },
-    {
-      "id": "byd-store",
-      "name": "BYD App Store",
-      "description": "Installs the BydStore APK — a marketplace for additional BYD-specific applications.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "BYD Community",
-      "minMagisk": 20400,
-      "compatibleUnits": [
-        "*"
-      ],
-      "compatibleSdkMin": 26,
-      "compatibleSdkMax": 34,
-      "downloadUrl": "https://github.com/YOUR_GITHUB_USERNAME/byd-module-store/releases/download/v1.0.0/byd-store.zip",
-      "sha256": "",
-      "sizeMb": 9.1,
-      "changelog": "Initial release",
-      "requires": []
-    },
-    {
-      "id": "byd-gms",
-      "name": "Google Mobile Services (GMS)",
-      "description": "Installs Google Play Services and core GMS packages. Required for apps that depend on Google APIs.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "BYD Community",
-      "minMagisk": 20400,
-      "compatibleUnits": [
-        "*"
-      ],
-      "compatibleSdkMin": 29,
-      "compatibleSdkMax": 30,
-      "downloadUrl": "https://github.com/YOUR_GITHUB_USERNAME/byd-module-store/releases/download/v1.0.0/byd-gms.zip",
-      "sha256": "",
-      "sizeMb": 220.0,
-      "changelog": "Initial release",
-      "requires": []
-    },
-    {
-      "id": "byd-sigspoof",
-      "name": "Signature Spoofing",
-      "description": "Patches the Android framework to allow signature spoofing. Required by MicroG as a Google Play Services replacement.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "BYD Community",
-      "minMagisk": 20400,
-      "compatibleUnits": [
-        "*"
-      ],
-      "compatibleSdkMin": 26,
-      "compatibleSdkMax": 34,
-      "downloadUrl": "https://github.com/YOUR_GITHUB_USERNAME/byd-module-store/releases/download/v1.0.0/byd-sigspoof.zip",
-      "sha256": "",
-      "sizeMb": 1.2,
-      "changelog": "Initial release",
-      "requires": []
-    },
-    {
-      "id": "byd-ota-patcher",
-      "name": "OTA Update Bypass",
-      "description": "Redirects OTA update checks to a local mock server, preventing unwanted firmware updates that may undo modifications.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "BYD Community",
-      "minMagisk": 20400,
-      "compatibleUnits": [
-        "Di3.0_3.5UI",
-        "Di3.0",
-        "Di4.0"
-      ],
-      "compatibleSdkMin": 29,
-      "compatibleSdkMax": 30,
-      "downloadUrl": "https://github.com/YOUR_GITHUB_USERNAME/byd-module-store/releases/download/v1.0.0/byd-ota-patcher.zip",
-      "sha256": "",
-      "sizeMb": 0.5,
-      "changelog": "Initial release — blocks OTA via hosts redirect",
-      "requires": []
-    }
+    { "id":"byd-test-module","name":"BYD Test Module","description":"Safe test module \u2014 no system changes. Verifies BYD Module Store works on your unit.","version":"1.0.0","versionCode":1,"author":"ashrafnaji","minMagisk":20400,"compatiblePlatforms":["*"],"compatibleUnits":["*"],"compatibleSdkMin":26,"compatibleSdkMax":34,"downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-test-module-v1.0.0.zip","sha256":"","sizeMb":0.01,"changelog":"Initial test release","requires":[] },
+    { "id":"byd-androidauto","name":"Android Auto","description":"Enables Android Auto on BYD Di3 head units. Patched APK with certificate bypass and SSL pinning disabled.","version":"1.0.0","versionCode":1,"author":"ashrafnaji","minMagisk":20400,"compatiblePlatforms":["di3-sw13","di3-sw14"],"compatibleUnits":["Di3.0_3.5UI","Di3.0"],"compatibleSdkMin":29,"compatibleSdkMax":30,"downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-androidauto.zip","sha256":"","sizeMb":15.2,"changelog":"Initial release","requires":[] },
+    { "id":"byd-carplay","name":"CarPlay + MFi Hook","description":"Enables Apple CarPlay via MFi coprocessor emulation (LD_PRELOAD). Requires donor DI3 unit on same Wi-Fi for signing relay.","version":"1.0.0","versionCode":1,"author":"ashrafnaji","minMagisk":20400,"compatiblePlatforms":["di3-sw13","di3-sw14"],"compatibleUnits":["Di3.0_3.5UI","Di3.0"],"compatibleSdkMin":29,"compatibleSdkMax":30,"downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-carplay.zip","sha256":"","sizeMb":2.8,"changelog":"Initial release","requires":[] },
+    { "id":"byd-lang-arabic","name":"Arabic UI Language Pack","description":"Patches 13 system APKs with Arabic RTL translations: AutoVideo, BluetoothPhone, BydBootGuide, CarSetting, Launcher3 and more.","version":"1.0.0","versionCode":1,"author":"ashrafnaji","minMagisk":20400,"compatiblePlatforms":["di3-sw13","di3-sw14","di4-sw15"],"compatibleUnits":["Di3.0_3.5UI","Di3.0","Di4.0"],"compatibleSdkMin":29,"compatibleSdkMax":31,"downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-lang-arabic.zip","sha256":"","sizeMb":28.5,"changelog":"Initial release","requires":[] },
+    { "id":"byd-voice-engine","name":"iFlytek Global Voice Engine","description":"Replaces Cerence with iFlytek engine. Supports AR/EN/RU/HI + 7 more. Patches SpeechHMI whitelist (autoType 0xff). Needs ~1.5GB voice data on /data/navi.","version":"1.0.0","versionCode":1,"author":"ashrafnaji","minMagisk":20400,"compatiblePlatforms":["di3-sw13"],"compatibleUnits":["Di3.0_3.5UI","Di3.0"],"compatibleSdkMin":29,"compatibleSdkMax":29,"downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-voice-engine.zip","sha256":"","sizeMb":138.0,"changelog":"Initial release","requires":[] },
+    { "id":"byd-store","name":"BYD App Store","description":"Installs the BydStore APK marketplace for additional BYD-specific applications.","version":"1.0.0","versionCode":1,"author":"ashrafnaji","minMagisk":20400,"compatiblePlatforms":["*"],"compatibleUnits":["*"],"compatibleSdkMin":26,"compatibleSdkMax":34,"downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-store.zip","sha256":"","sizeMb":9.1,"changelog":"Initial release","requires":[] },
+    { "id":"byd-gms","name":"Google Mobile Services","description":"Installs Google Play Services and core GMS packages for apps that depend on Google APIs.","version":"1.0.0","versionCode":1,"author":"ashrafnaji","minMagisk":20400,"compatiblePlatforms":["di3-sw13","di3-sw14"],"compatibleUnits":["Di3.0_3.5UI","Di3.0"],"compatibleSdkMin":29,"compatibleSdkMax":30,"downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-gms.zip","sha256":"","sizeMb":220.0,"changelog":"Initial release","requires":[] },
+    { "id":"byd-sigspoof","name":"Signature Spoofing","description":"Patches Android framework for signature spoofing. Required by MicroG as Google Play Services replacement.","version":"1.0.0","versionCode":1,"author":"ashrafnaji","minMagisk":20400,"compatiblePlatforms":["*"],"compatibleUnits":["*"],"compatibleSdkMin":26,"compatibleSdkMax":34,"downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-sigspoof.zip","sha256":"","sizeMb":1.2,"changelog":"Initial release","requires":[] },
+    { "id":"byd-ota-patcher","name":"OTA Update Bypass","description":"Redirects OTA update checks to a local mock server, preventing unwanted firmware updates that may undo your modifications.","version":"1.0.0","versionCode":1,"author":"ashrafnaji","minMagisk":20400,"compatiblePlatforms":["di3-sw13","di3-sw14","di4-sw15"],"compatibleUnits":["Di3.0_3.5UI","Di3.0","Di4.0"],"compatibleSdkMin":29,"compatibleSdkMax":31,"downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v1.0.0/byd-ota-patcher.zip","sha256":"","sizeMb":0.5,"changelog":"Initial release","requires":[] }
   ]
 }
