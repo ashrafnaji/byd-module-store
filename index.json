@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 3,
+  "note": "App fetches index.json first, then only the catalog files matching outswver.",
+  "vehicles": [
+    { "id":"di3-sw13.1.22","name":"BYD Di3 SW 13.1.22","description":"Atto 3 / Yuan Plus — SW 13.1.22.x","carModels":["BYD Atto 3","BYD Yuan Plus","BYD Yuan Plus Pro"],"vehicleTypePatterns":["Di3.0"],"outswverPatterns":["13.1.22"],"chipset":"trinket","sdkMin":29,"sdkMax":29 },
+    { "id":"di3-sw13.1","name":"BYD Di3 SW 13.1.x","description":"Atto 3 / Yuan Plus — any 13.1 patch","carModels":["BYD Atto 3","BYD Yuan Plus"],"vehicleTypePatterns":["Di3.0"],"outswverPatterns":["13.1."],"chipset":"trinket","sdkMin":29,"sdkMax":29 },
+    { "id":"di3-sw13","name":"BYD Di3 SW 13.x","description":"Atto 3 / Yuan Plus — any SW 13","carModels":["BYD Atto 3","BYD Yuan Plus","BYD Atto 3 Pro"],"vehicleTypePatterns":["Di3.0"],"outswverPatterns":["13."],"chipset":"trinket","sdkMin":29,"sdkMax":30 },
+    { "id":"di4-sw15","name":"BYD Di4 SW 15.x","description":"Seal / Atto 4 / Dolphin Plus","carModels":["BYD Seal","BYD Atto 4","BYD Dolphin Plus","BYD Sealion 6"],"vehicleTypePatterns":["Di4.0"],"outswverPatterns":["15."],"chipset":"","sdkMin":30,"sdkMax":31 },
+    { "id":"di5-sw16","name":"BYD Di5 SW 16.x","description":"Atto 5 / Sealion 7","carModels":["BYD Atto 5","BYD Sealion 7","BYD Seal U"],"vehicleTypePatterns":["Di5.0"],"outswverPatterns":["16."],"chipset":"","sdkMin":31,"sdkMax":33 },
+    { "id":"di2-sw11","name":"BYD Di2 SW 11.x","description":"Older BYD models","carModels":["BYD Yuan EV","BYD e2","BYD e3"],"vehicleTypePatterns":["Di2.0"],"outswverPatterns":["11."],"chipset":"","sdkMin":26,"sdkMax":28 }
+  ],
+  "catalogs": [
+    { "id":"universal",   "outswverPatterns":["*"],       "path":"catalog/universal/modules.json",   "description":"Works on all BYD units" },
+    { "id":"sw-13.1.22",  "outswverPatterns":["13.1.22"],  "path":"catalog/sw-13.1.22/modules.json",  "description":"Exact patch 13.1.22 only" },
+    { "id":"sw-13.1",     "outswverPatterns":["13.1."],    "path":"catalog/sw-13.1/modules.json",     "description":"All SW 13.1.x versions" },
+    { "id":"sw-13",       "outswverPatterns":["13."],      "path":"catalog/sw-13/modules.json",       "description":"Any SW 13.x (Di3)" },
+    { "id":"sw-15",       "outswverPatterns":["15."],      "path":"catalog/sw-15/modules.json",       "description":"SW 15.x (Di4)" },
+    { "id":"sw-16",       "outswverPatterns":["16."],      "path":"catalog/sw-16/modules.json",       "description":"SW 16.x (Di5)" }
+  ]
+}
