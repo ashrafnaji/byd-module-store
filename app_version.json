@@ -1,6 +1,6 @@
 {
-    "versionCode": 4,
-    "versionName": "1.4",
-    "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/v1.4/app-debug.apk",
-    "releaseNotes": "Stable fingerprint (survives factory reset) + auto-update support"
+  "versionCode": 5,
+  "versionName": "1.6",
+  "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/v1.6/app-debug.apk",
+  "releaseNotes": ""
 }
