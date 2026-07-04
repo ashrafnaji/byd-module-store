@@ -1,6 +1,1 @@
-{
-  "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/v2.1/app-debug.apk",
-  "versionCode": 8,
-  "releaseNotes": "auto_update",
-  "versionName": "2.1"
-}
+{"versionCode":8,"versionName":"2.1","downloadUrl":"https://github.com/ashrafnaji/byd-module-store/releases/download/v2.1/app-debug.apk","releaseNotes":"auto_update"}
