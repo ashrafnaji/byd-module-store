@@ -1,6 +1,6 @@
 {
-  "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/v1.7/app-debug.apk",
+  "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/v1.8/app-debug.apk",
   "versionCode": 6,
-  "releaseNotes": "Version now shown in title bar + status bar",
+  "releaseNotes": "Version shown in title + status bar",
   "versionName": "1.8"
 }
