@@ -1,6 +1,6 @@
 {
   "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/v1.7/app-debug.apk",
   "versionCode": 5,
-  "releaseNotes": "Fix: update check runs on startup, independent of license",
+  "releaseNotes": "Fix: update check runs on startup",
   "versionName": "1.7"
 }
