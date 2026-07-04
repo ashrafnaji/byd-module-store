@@ -23,7 +23,7 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/LSPosed-v1.9.2-7024-zygisk-release.zip",
       "sha256": "0ebc6bcb465d1c4b44b7220ab5f0252e6b4eb7fe43da74650476d2798bb29622",
       "sizeMb": 2.3,
-      "changelog": "Uploaded 2026-07-01",
+      "changelog": "Uploaded 2026-07-04",
       "requires": []
     },
     {
@@ -48,7 +48,7 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_androidauto_install.zip",
       "sha256": "6c4574c41e6659f89c6bfd8ad94c3d9d1a9cd191250d05807fd561a76580c8fa",
       "sizeMb": 8.4,
-      "changelog": "Uploaded 2026-07-01",
+      "changelog": "Uploaded 2026-07-04",
       "requires": []
     },
     {
@@ -73,7 +73,7 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_lang_fix_install.zip",
       "sha256": "73ff80748228d470beb03ad5dda4b8fec8ecc47df80f6220879db282466b7d8e",
       "sizeMb": 827.8,
-      "changelog": "Uploaded 2026-07-01",
+      "changelog": "Uploaded 2026-07-04",
       "requires": []
     },
     {
@@ -98,7 +98,7 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_store.zip",
       "sha256": "8ffbdff6333101721fdde6535cd964418337d79199f50871349c084fb497e488",
       "sizeMb": 24.8,
-      "changelog": "Uploaded 2026-07-01",
+      "changelog": "Uploaded 2026-07-04",
       "requires": []
     },
     {
@@ -123,7 +123,7 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_voice_countrycode_install.zip",
       "sha256": "3af345f681f3c356d4dec6edeeb603f08509ca762e8294ebfae0f33c267cae69",
       "sizeMb": 0.0,
-      "changelog": "Uploaded 2026-07-01",
+      "changelog": "Uploaded 2026-07-04",
       "requires": []
     },
     {
@@ -146,9 +146,9 @@
       "compatibleSdkMin": 29,
       "compatibleSdkMax": 34,
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_voice_engine_install.zip",
-      "sha256": "5ad2bce624d406e4817f562fd74be27e61852d4b683e914cd04616f105cfa587",
-      "sizeMb": 138.2,
-      "changelog": "Uploaded 2026-07-01",
+      "sha256": "597c07b19797f313d9999195438e3113b35f1692145121cef9307baa32fc332e",
+      "sizeMb": 1754.7,
+      "changelog": "Uploaded 2026-07-04",
       "requires": []
     },
     {
@@ -173,7 +173,7 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_playstore_apps.zip",
       "sha256": "637c5c9d72ed10d53e9c597fc652c99a5841754cfe013a465ea04c7a0e2be6a1",
       "sizeMb": 107.7,
-      "changelog": "Uploaded 2026-07-01",
+      "changelog": "Uploaded 2026-07-04",
       "requires": []
     },
     {
@@ -198,7 +198,7 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/Zygisk-Next-1.3.2-688-2c60cdd-release.zip",
       "sha256": "6eedf9401eeb0778febee48f08af8ea517208ceb31f644715e24ca2a57b59425",
       "sizeMb": 5.5,
-      "changelog": "Uploaded 2026-07-01",
+      "changelog": "Uploaded 2026-07-04",
       "requires": []
     }
   ]
