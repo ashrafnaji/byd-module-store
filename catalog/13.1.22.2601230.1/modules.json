@@ -77,31 +77,6 @@
       "requires": []
     },
     {
-      "id": "byd-voice-countrycode",
-      "name": "BYD Global Voice Country Code",
-      "description": "Sets sys.byd.countrycode so the global BYD voice assistant (com.byd.vrassistant) initializes instead of crash-looping on the China unit.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "Ashraf",
-      "minMagisk": 20400,
-      "compatiblePlatforms": [
-        "13.1.22.2601230.1"
-      ],
-      "compatibleUnits": [
-        "*"
-      ],
-      "testedOnOutswver": [
-        "13.1.22.2601230.1"
-      ],
-      "compatibleSdkMin": 29,
-      "compatibleSdkMax": 34,
-      "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_voice_countrycode_install.zip",
-      "sha256": "3af345f681f3c356d4dec6edeeb603f08509ca762e8294ebfae0f33c267cae69",
-      "sizeMb": 0.0,
-      "changelog": "Uploaded 2026-07-04",
-      "requires": []
-    },
-    {
       "id": "playstore-system-apps",
       "name": "microG Store System Apps",
       "description": "Systemless Magisk install for all APKs from BYD_MEGA/playstore/sigmoduele/store as system apps.",
@@ -198,6 +173,31 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_lang_fix_install.zip",
       "sha256": "0c965df1827f712f654ebb227a3424b2ca66adbca127b0a36061b7c51c5a0a03",
       "sizeMb": 827.8,
+      "changelog": "Uploaded 2026-07-21",
+      "requires": []
+    },
+    {
+      "id": "byd-voice-countrycode",
+      "name": "BYD Global Voice Country Code",
+      "description": "Sets sys.byd.countrycode so the global BYD voice assistant (com.byd.vrassistant) initializes instead of crash-looping on the China unit.",
+      "version": "1.0.0",
+      "versionCode": 1,
+      "author": "Ashraf",
+      "minMagisk": 20400,
+      "compatiblePlatforms": [
+        "13.1.22.2601230.1"
+      ],
+      "compatibleUnits": [
+        "*"
+      ],
+      "testedOnOutswver": [
+        "13.1.22.2601230.1"
+      ],
+      "compatibleSdkMin": 29,
+      "compatibleSdkMax": 34,
+      "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_voice_countrycode_install.zip",
+      "sha256": "3af345f681f3c356d4dec6edeeb603f08509ca762e8294ebfae0f33c267cae69",
+      "sizeMb": 0.0,
       "changelog": "Uploaded 2026-07-21",
       "requires": []
     }
