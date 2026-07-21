@@ -127,31 +127,6 @@
       "requires": []
     },
     {
-      "id": "byd-voice-engine",
-      "name": "BYD Global Voice Engine (iFlytek)",
-      "description": "All-in-one: patched SpeechHMI (whitelist bypass) + SpeechAvatar + VRdownloadXF as system apps, sys.byd.countrycode, /navi bind + SELinux relabel, voice settings, disable Cerence. Requires /navi mountpoint in system image and voice data in /data/navi.",
-      "version": "2.0.0",
-      "versionCode": 1,
-      "author": "Ashraf",
-      "minMagisk": 20400,
-      "compatiblePlatforms": [
-        "13.1.22.2601230.1"
-      ],
-      "compatibleUnits": [
-        "*"
-      ],
-      "testedOnOutswver": [
-        "13.1.22.2601230.1"
-      ],
-      "compatibleSdkMin": 29,
-      "compatibleSdkMax": 34,
-      "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_voice_engine_install.zip",
-      "sha256": "5bbc819d2417316e91f548f3c86b9acae7e7aae93f590061ab68a963aaec0f70",
-      "sizeMb": 1754.7,
-      "changelog": "Uploaded 2026-07-04",
-      "requires": []
-    },
-    {
       "id": "byd-lang-fix",
       "name": "BYD Language Fix",
       "description": "Systemless replacement for staged BYD APKs.",
@@ -198,6 +173,31 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_voice_countrycode_install.zip",
       "sha256": "eb9e7c2c0619ccdb8e754cc2db4f6156559ee0afd58923d7f77418eec6ca0e6f",
       "sizeMb": 0.0,
+      "changelog": "Uploaded 2026-07-21",
+      "requires": []
+    },
+    {
+      "id": "byd-voice-engine",
+      "name": "BYD Global Voice Engine (iFlytek)",
+      "description": "All-in-one: patched SpeechHMI (whitelist bypass) + SpeechAvatar + VRdownloadXF as system apps, sys.byd.countrycode, voice data + settings on /sdcard (no system.img reflash / /navi mountpoint needed), disable Cerence.",
+      "version": "2.0.0",
+      "versionCode": 1,
+      "author": "Ashraf",
+      "minMagisk": 20400,
+      "compatiblePlatforms": [
+        "13.1.22.2601230.1"
+      ],
+      "compatibleUnits": [
+        "*"
+      ],
+      "testedOnOutswver": [
+        "13.1.22.2601230.1"
+      ],
+      "compatibleSdkMin": 29,
+      "compatibleSdkMax": 34,
+      "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_voice_engine_install.zip",
+      "sha256": "a422230fb7c9b178b1870a0eccd6ba72a7542f6011ca996072a0ab38e7c20b31",
+      "sizeMb": 1754.7,
       "changelog": "Uploaded 2026-07-21",
       "requires": []
     }
