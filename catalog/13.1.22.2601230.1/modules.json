@@ -196,7 +196,7 @@
       "compatibleSdkMin": 29,
       "compatibleSdkMax": 34,
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_voice_countrycode_install.zip",
-      "sha256": "3af345f681f3c356d4dec6edeeb603f08509ca762e8294ebfae0f33c267cae69",
+      "sha256": "eb9e7c2c0619ccdb8e754cc2db4f6156559ee0afd58923d7f77418eec6ca0e6f",
       "sizeMb": 0.0,
       "changelog": "Uploaded 2026-07-21",
       "requires": []
