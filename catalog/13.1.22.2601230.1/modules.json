@@ -127,31 +127,6 @@
       "requires": []
     },
     {
-      "id": "byd-lang-fix",
-      "name": "BYD Language Fix",
-      "description": "Systemless replacement for staged BYD APKs.",
-      "version": "1.0.0",
-      "versionCode": 1,
-      "author": "GitHub Copilot",
-      "minMagisk": 20400,
-      "compatiblePlatforms": [
-        "13.1.22.2601230.1"
-      ],
-      "compatibleUnits": [
-        "*"
-      ],
-      "testedOnOutswver": [
-        "13.1.22.2601230.1"
-      ],
-      "compatibleSdkMin": 29,
-      "compatibleSdkMax": 34,
-      "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_lang_fix_install.zip",
-      "sha256": "0c965df1827f712f654ebb227a3424b2ca66adbca127b0a36061b7c51c5a0a03",
-      "sizeMb": 827.8,
-      "changelog": "Uploaded 2026-07-21",
-      "requires": []
-    },
-    {
       "id": "byd-voice-countrycode",
       "name": "BYD Global Voice Country Code",
       "description": "Sets sys.byd.countrycode so the global BYD voice assistant (com.byd.vrassistant) initializes instead of crash-looping on the China unit.",
@@ -198,6 +173,31 @@
       "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_voice_engine_install.zip",
       "sha256": "a422230fb7c9b178b1870a0eccd6ba72a7542f6011ca996072a0ab38e7c20b31",
       "sizeMb": 1754.7,
+      "changelog": "Uploaded 2026-07-21",
+      "requires": []
+    },
+    {
+      "id": "byd-lang-fix",
+      "name": "BYD Language Fix",
+      "description": "Systemless replacement for staged BYD APKs.",
+      "version": "1.0.0",
+      "versionCode": 1,
+      "author": "GitHub Copilot",
+      "minMagisk": 20400,
+      "compatiblePlatforms": [
+        "13.1.22.2601230.1"
+      ],
+      "compatibleUnits": [
+        "*"
+      ],
+      "testedOnOutswver": [
+        "13.1.22.2601230.1"
+      ],
+      "compatibleSdkMin": 29,
+      "compatibleSdkMax": 34,
+      "downloadUrl": "https://github.com/ashrafnaji/byd-module-store/releases/download/13.1.22.2601230.1/magisk_byd_lang_fix_install.zip",
+      "sha256": "0c965df1827f712f654ebb227a3424b2ca66adbca127b0a36061b7c51c5a0a03",
+      "sizeMb": 827.8,
       "changelog": "Uploaded 2026-07-21",
       "requires": []
     }
